@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fruit Poll!</title>
+  <style>
+    button {
+      color:rgb(95, 96, 117);
+      padding: 20px;
+      margin: 10px;
+      font-size: 16px;
+    }
+    result {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #7dd8d4;
+    }
+            body {
+            font-family: serif;
+            color: #ecf4f3;
+            background: linear-gradient(135deg, #ecf3fa 0%, #f8c2f3 100%);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            background: rgba(255,255,255);
+            padding: 20px;
+            border-radius: 15px;
+            color: #2f4f4f;
+            margin-bottom: 30px;
+        }
+        .nav-menu {
+            background: rgba(255,255,255);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            color: #2f4f4f;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+     body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f3e5f5 0%, bisque);
+      color:rgb(134, 135, 168);
+      text-align: center;
+      margin-top: 50px;
+    }
+        .season-section {
+            background: rgba(255,255,255,0.8);
+            padding: 20px;
+            border-radius: 15px;
+            color: #2f4f4f;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .season-section h3 {
+            color: #2f4f4f;
+            margin-top: 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        .fruit-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .season-fruit {
+            background: blanchedalmond;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+  </style>
+</head>
+<body>
+  <div>
+    <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="citrus.html">Citrus</a>
+            <a href="berries.html">Berries</a>
+            <a href="tropical.html">Tropical</a>
+            <a href="stone-fruits.html">Stone Fruits</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="seasonal.html">Seasonal</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="fun-facts.html">Fun Facts</a>
+            <a href="selector.html">Poll</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    
+    <div>
+    <h1>Choose Your Favorite Fruit!</h1>
+    <button onclick="selectFruit('Apple')">Apple</button>
+    <button onclick="selectFruit('Banana')">Banana</button>
+    <button onclick="selectFruit('Orange')">Orange</button>
+    <button onclick="selectFruit('Grapes')">Grapes</button>
+    <button onclick="selectFruit('Kiwi')">Kiwi</button>
+    <button onclick="selectFruit('Watermelon')">Watermelon</button>
+     <button onclick="selectFruit('Mango')">Mango</button>
+    <button onclick="selectFruit('Pineapple')">Pineapple</button>
+    <button onclick="selectFruit('Peach')">Peach</button>
+    <button onclick="selectFruit('Strawberry')">Strawberry</button>
+    <button onclick="selectFruit('Blueberry')">Blueberry</button>
+    <button onclick="selectFruit('Blackberry')">Blackberry</button>
+    <button onclick="selectFruit('Raspberry')">Raspberry</button>
+    <button onclick="selectFruit('Cherry')">Cherry</button>
+    <button onclick="selectFruit('Plum')">Plum</button>
+    <button onclick="selectFruit('Apricot')">Apricot</button>
+    <button onclick="selectFruit('Lemon')">Lemon</button>
+    <button onclick="selectFruit('Lime')">Lime</button>
+    <button onclick="selectFruit('Grapefruit')">Grapefruit</button>
+    <button onclick="selectFruit('Coconut')">Coconut</button>
+    <button onclick="selectFruit('Nectarine')">Nectarine</button>
+    
+  </div>
+  <div id="result"></div>
+
+  <script>
+    function selectFruit(fruit) {
+      document.getElementById('result').textContent = 'Your favorite fruit is: ' + fruit;
+    }
+  </script>
+</body>
+</html>
